@@ -73,8 +73,11 @@ After careful studying of the dataset and the attributes, we decided to fist sta
 The main types of crime were divided into four categories instead of the very detailed UCR codes provided by the Atlanta PD. For example, in Robbery, there were almost 25 different sub categories, Robbery - Street - Gun, robbery - Commercial - Gun, Robbery - Street - knife, Robbery - Bank - Knife, to name a few. So considering these factors, we divided the data into the following major categories:
 
 • Category 1: Homicides and Manslaughter
+
 • Category 2: Assault and Robbery
+
 • Category 3: Burglary and Auto-theft
+
 • Category 4: Larceny
 
 <p align="center">
