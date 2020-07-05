@@ -9,14 +9,15 @@ The main motivation for our project was how easily the crime data could be avail
 The Projects main aim was to be able to analyze the crimes happening all around in Atlanta and be able to form an association as to where and when certain types of crimes normally happen. The project can form association rules between the time of the crime reported, the location of the crime and the type of crime that happened. This enables us to discover a pattern of the crime and may help users take precaution measures to avoid it. Some of the crimes that seem common are in fact something the users could have avoided, if the patterns of the crimes are studied. The criminals usually tend to follow a certain pattern when doing a crime, like the locations where the crime happened or the time during which the crimes happens. Studying and analyzing the patterns can help the citizens of that city be a step ahead and try preventing it from happening. The visualizations developed would be able to translate the results achieved. They would be able to better show the changes in the data.
 
 
-## Development Platform and libraries
+## Development Platform and Libraries
 
 We implemented the entire project using Python as the development platform. The selection of python over other platforms was python was extremely scalable as compared to platforms like R and it is faster. Python has several data science libraries that make the development very easy for the developer. We used several python libraries for the entire implementation process, they include: matplotlib, seaborn, pandas, numpy, shapely, descartes and geopandas. Shapely, descartes and geopandas were the libraries used to generate the visualisations translated from the results obtained.
 
 
-# Algorithms used:
+# Algorithms
 
 ## K-means Algorithm 
+
 The data was clustered using K-Means algorithm by considering location distribution of the crimes happening. We took the attributes, longitude and latitude, into account for the clustering. We then were able to plot the clusters in the respective locations to determine any location trends with respect to crime categories. We used the elbow method to determine the optimum K-value for the K-means.
 
 <p align="center">
@@ -25,10 +26,9 @@ The data was clustered using K-Means algorithm by considering location distribut
 
 Elbow Method gives us an idea on what a good K number of clusters would be based on the sum of squared distance(SSE) between data points and their assigned clusters’ centroids. We normally pick K at the spot where SSE starts to flatten out and forming an elbow.
 
-
 <p align="center">
     <img src="/Images/kmeans.png" alt="Image" width="600" height="400" />
-</p>
+</p></center>
 
 ## Mean Shift Algorithm 
 
@@ -46,8 +46,6 @@ Principal Component Analysis was used to reduce the dimension of the feature spa
     <img src="/Images/principle.png" alt="Image" width="600" height="400" />
 </p></center>
 
-
-
 # Explanatory Analysis
 
 After careful studying of the dataset and the attributes, we decided to fist start with dividing the dataset according to the types of crimes in the city. That would enable us to be able to divide each type of crime, and then analyse the subdivisions separately to further learn more patterns in each of those crimes. For that we had to visualize the data into several different ways so that we could study it in detail. Explanatory analysis would enable us to determine which attributes to use to cluster and help in prediction.
@@ -58,19 +56,26 @@ After careful studying of the dataset and the attributes, we decided to fist sta
     <img src="/Images/crimeyear.png" alt="Image" width="400" height="600" />
 </p>
 
-## Crime distribution wrt months 
+## Crime distribution w.r.t months 
 
 <p align="center">
     <img src="/Images/heatmap_month.png" alt="Image" width="600" height="400" />
 </p>
 
-## Crime distibution wrt days of week
+## Crime distibution w.r.t days of week
 
 <p align="center">
     <img src="/Images/heatmap_week.png" alt="Image" width="600" height="400" />
 </p>
 
 ## Crime distribution according to various categories
+
+The main types of crime were divided into four categories instead of the very detailed UCR codes provided by the Atlanta PD. For example, in Robbery, there were almost 25 different sub categories, Robbery - Street - Gun, robbery - Commercial - Gun, Robbery - Street - knife, Robbery - Bank - Knife, to name a few. So considering these factors, we divided the data into the following major categories:
+
+• Category 1: Homicides and Manslaughter
+• Category 2: Assault and Robbery
+• Category 3: Burglary and Auto-theft
+• Category 4: Larceny
 
 <p align="center">
     <img src="/Images/categories.png" alt="Image" width="800" height="400" />
