@@ -42,6 +42,11 @@ The other algorithm used was the mean shift algorithm.The mean shift algorithm i
 
 Principal Component Analysis was used to reduce the dimension of the feature space. Withing dimensionality reduction, we were interested in if certain components or discriminants would contain high explained variance ratios. This would indicate which components or features would be of relative importance. Each cluster was then plotted and overlaid with colors corresponding to crime category. PCA performed better than the other algorithms as it reduces the dimensions and the number of features, thereby only taking the features of higher importance. It took the shortest amount of time.
 
+<p align="center">
+    <img src="/Images/principle.png" alt="Image" width="600" height="400" />
+</p></center>
+
+
 
 # Explanatory Analysis
 
@@ -65,10 +70,11 @@ After careful studying of the dataset and the attributes, we decided to fist sta
     <img src="/Images/heatmap_week.png" alt="Image" width="600" height="400" />
 </p>
 
+## Crime distribution according to various categories
 
-
---categories
-
+<p align="center">
+    <img src="/Images/categories.png" alt="Image" width="800" height="400" />
+</p></center>
 
 # Results 
 
